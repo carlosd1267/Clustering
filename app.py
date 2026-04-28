@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from sklearn.metrics import silhouette_score, davies_bouldin_score
 from model import preprocessing, clustering 
 
-st.tittle("Clustering App")
+st.title("Clustering App")
 file = st.file_uploader("Upload your dataset",type=["csv"])
 if file is not None:
     df= pd.read_csv(file)
